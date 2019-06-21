@@ -20,6 +20,10 @@ class Tree extends Component {
     console.log(this.tree);
   };
 
+  preOrderTraversal = () => {
+    this.tree.preOrderTraversal(this.tree.root);
+  };
+
   render() {
     return (
       <div>
@@ -28,6 +32,12 @@ class Tree extends Component {
         <input type="button" value="Add Value" onClick={this.addValue} />
         <br />
         <input type="button" value="Show Tree" onClick={this.showTree} />
+        <br />
+        <input
+          type="button"
+          value="Pre Order Traversal"
+          onClick={this.preOrderTraversal}
+        />
       </div>
     );
   }
