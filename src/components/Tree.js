@@ -1,3 +1,6 @@
+/**
+ *
+ */
 import React, { Component } from "react";
 import tree from "../algos/trees/tree";
 import node from "../algos/trees/node";
@@ -29,6 +32,11 @@ class Tree extends Component {
 
     console.log(traversal);
   };
+  getHeight = () => {
+    const height = this.tree.getHeight(this.tree.root);
+
+    console.log(height);
+  };
 
   render() {
     return (
@@ -50,6 +58,8 @@ class Tree extends Component {
           value="Level Order Traversal"
           onClick={this.levelOrderTraversal}
         />
+        <br />
+        <input type="button" value="Height" onClick={this.getHeight} />
       </div>
     );
   }
