@@ -4,7 +4,7 @@ import TreeNode from "../node";
  * @param {*} node
  * @param {TreeNode} value
  * To add value in a tree
- * Assuming its a binary search tree
+ * assuming its a binary search tree
  */
 function addValue(node, value) {
   if (node.value < value) {

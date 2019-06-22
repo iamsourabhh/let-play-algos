@@ -24,6 +24,12 @@ class Tree extends Component {
     this.tree.preOrderTraversal(this.tree.root);
   };
 
+  levelOrderTraversal = () => {
+    const traversal = this.tree.levelOrderTraversal(this.tree.root);
+
+    console.log(traversal);
+  };
+
   render() {
     return (
       <div>
@@ -37,6 +43,12 @@ class Tree extends Component {
           type="button"
           value="Pre Order Traversal"
           onClick={this.preOrderTraversal}
+        />
+        <br />
+        <input
+          type="button"
+          value="Level Order Traversal"
+          onClick={this.levelOrderTraversal}
         />
       </div>
     );
